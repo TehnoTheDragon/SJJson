@@ -26,8 +26,23 @@ JsonObject jsonObject = shop.GetJson();
 shop.UpdateJson(jsonObject)
 ```
 
+# you need gson for using this things!
+- I used such libraries.
+```gradle
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.google.code.gson:gson:2.8.7'
+}
+```
+
 ## Shop Example
 ```java
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+//import *.datastore.DataStore;
+//import *.datastore.StoreScope;
+
 public static MainClass
 {
     public static DataStore globalStore = new DataStore("global_store");
